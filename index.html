@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zachary Bowman | Portfolio</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --panel: #121a2b;
+        --text: #edf2ff;
+        --muted: #b7c3dd;
+        --accent: #7dd3fc;
+        --accent-2: #a78bfa;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, var(--bg), #111827);
+        color: var(--text);
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 80px 24px 60px;
+      }
+      .hero {
+        padding: 48px 0 32px;
+      }
+      .eyebrow {
+        color: var(--accent);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+      h1 {
+        font-size: clamp(2.5rem, 5vw, 5rem);
+        margin: 16px 0;
+      }
+      p {
+        color: var(--muted);
+        font-size: 1.1rem;
+        line-height: 1.7;
+        max-width: 650px;
+      }
+      .btn-row {
+        margin-top: 28px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 14px 22px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: transform 0.2s ease;
+      }
+      .btn:hover { transform: translateY(-1px); }
+      .primary {
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        color: #081120;
+      }
+      .secondary {
+        border: 1px solid rgba(255,255,255,0.14);
+        color: var(--text);
+      }
+      .card {
+        background: rgba(18, 26, 43, 0.9);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 18px;
+        padding: 24px;
+        margin-top: 40px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+      .item {
+        background: rgba(255,255,255,0.02);
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 14px;
+        padding: 18px;
+      }
+      h2 {
+        margin-top: 0;
+        font-size: 1.3rem;
+      }
+      ul {
+        padding-left: 18px;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+      footer {
+        margin-top: 44px;
+        color: var(--muted);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="hero">
+        <div class="eyebrow">Portfolio</div>
+        <h1>Zachary Bowman</h1>
+        <p>
+          I’m a developer focused on building thoughtful digital experiences, delivering clear user-facing products,
+          and solving practical problems with efficient, modern web solutions.
+        </p>
+        <div class="btn-row">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="mailto:your-email@example.com">Contact Me</a>
+        </div>
+      </header>
+
+      <section id="projects" class="card">
+        <h2>Featured Work</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>Web Applications</h3>
+            <p>Responsive interfaces and polished user experiences built with modern frontend tools.</p>
+          </div>
+          <div class="item">
+            <h3>Product Thinking</h3>
+            <p>Turning ideas into clean, usable workflows with business and user needs in mind.</p>
+          </div>
+          <div class="item">
+            <h3>Problem Solving</h3>
+            <p>Debugging, iteration, and implementation across product and technical challenges.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>About</h2>
+        <ul>
+          <li>Focused on development and digital product work</li>
+          <li>Interested in building useful, accessible, and maintainable experiences</li>
+          <li>Open to opportunities in software, product, and development roles</li>
+        </ul>
+      </section>
+
+      <footer>
+        © 2026 Zachary Bowman
+      </footer>
+    </div>
+  </body>
+</html>
